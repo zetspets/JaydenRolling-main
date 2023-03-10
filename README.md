@@ -1,15 +1,7 @@
 # prj4-cv
 
-A template to create a CV while learning HTML and CSS
-
-## See it live!
-
-Click on <https://buas-media-interactive.github.io/prj4-cv/> to see what the résumé looks like when published!
-
-## Create your own CV
-
-Create your own GitHub repository based on this template by clicking on
-[Use this template](https://github.com/buas-media-interactive/prj4-cv/generate).
+Class 3 Team 4 Individual Assignment
+Created using a template
 
 ## Course requirements
 
