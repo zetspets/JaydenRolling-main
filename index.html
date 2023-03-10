@@ -1,0 +1,268 @@
+<!doctype html>
+<html class="h-100" lang="en">
+  
+  <!-- An HTML document always starts with a "head", i.e. information about the page that isn't directly visible --><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Links to the CSS styles from Bootstrap. -->
+    <!-- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- -->
+
+    <!-- Links to our additional CSS styles -->
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://use.typekit.net/pyg6xma.css">
+	
+    <!-- Alternative CSS for demonstration purposes. You must deactivate the Bootstrap CSS to activate this one. -->
+    <!-- 
+    <link rel="stylesheet" href="css/alternative.css">
+     -->
+
+    <title>Jayden Rolling's Resumé</title>
+  </head>
+  <!-- End of the head -->
+
+  <!-- Start of the body, which contains everything visible on the page -->
+  <body class="d-flex flex-column h-100 justify-content-between">
+
+    <!--
+      We use a Bootstrap container to align contents.
+      The "container" class can be replaced by "container-fluid" to make a full width page.
+      The "my-sm-4" class adds a margin (m) vertical (y) at sizes small (-sm-) and above, of 4 x 6 pixels
+      The "resume-container" class doesn't come from Bootstrap, you can use it for your own styles
+    -->
+    <div class="container shadow-lg my-sm-4 resume-container">
+
+      <!--
+        <header> is a semantic element: it works exactly like <div>, but it gives information about the role of the code below.
+        The "row" class is used for the Bootstrap grid.
+      -->
+      <header class="row resume-header justify-content-center">
+        <!--
+          A container to wrap around the portrait and align it. We use Bootstrap grid columns.
+          This constrains the portrait to columns of decreasing sizes
+        -->
+        <div class="portrait-container col-5 col-sm-4 col-md-3 col-lg-2">
+          <!--
+            "w-100" makes sure the image takes the full width of the column it's in
+            "rounded-circle" cuts a circle around the image
+          -->
+          <img class="w-100 rounded-circle my-3" src="https://media.licdn.com/dms/image/D4E03AQGU7A-MawTCOg/profile-displayphoto-shrink_800_800/0/1674515051158?e=1682553600&v=beta&t=Yw57dloNVzw6lZpKYZu02637hiPerugm5c2eellNq0s" alt="Portrait of Jayden Rolling" width="160">
+        </div>
+        <!--
+          A container to wrap around your name and tagline. Full-width at small size, then columns of increasing size.
+        -->
+        <div class="col-12 col-sm-8 col-md-9 col-lg-10 my-3 header-content">
+          <h1 class="name">Jayden Rolling</h1>
+          <h5 class="name">Actor, Artist, Video Editor, Student</h5>
+        </div>
+      </header>
+
+      <!--
+        Another row in the Bootstrap grid, for the rest of the résumé.
+        Biography and other details will be on top of each other at sizes XS and S, then next to each other.
+        Use the "flex-row-reverse" class here to swap the columns around.
+      -->
+      <div class="row resume-bottom">
+
+        <!--
+          <main> is another semantic element. It will contain biographical info (professional experience and education).
+        -->
+        <main class="col-md-7 col-lg-8 col-xl-9 resume-main">
+
+          <!--
+            <section> is yet another semantic element. The first one is for professional experience.
+          -->
+          <section class="titles">
+            <h2>Professional Experience</h2>
+            <!--
+              Each list item (li) in the unordered list (ul) below will be one job.
+              "list-unstyled" is a class that hides the bullet points of a list.
+            -->
+            <ul class="biography-list list-unstyled">
+
+              <!-- Top item (generally the latest or most relevant) in professional experience -->
+              <li class="biography-item row mb-2">
+                <!-- We're using a grid inside a grid so we can align logos and text -->
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="data:image/jpeg;base64,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" alt="Company logo" width="80">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h4>Remote Intern, Park Films Ireland</h4>
+                  <h5>February 2023 to Present</h5>
+                  <!-- Use the list below to talk about your achievements -->
+                  <ul class="biography-details list-unstyled">
+                    <li>TV Show Post-Production Assistance&nbsp; &nbsp; &nbsp;&nbsp;</li>
+                    <li>Drafted cast credits in order of appearance&nbsp;</li>
+                    <li>Organize task lists and invoices&nbsp;</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- 2nd item in professional experience -->
+              <li class="biography-item row mb-2">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                <!-- We're using a grid inside a grid so we can align logos and text -->
+                  <img class="biography-logo mw-100 d-block mx-auto" src="https://www.savingsinseconds.com/wp-content/uploads/2018/11/FYE-logo.jpg" alt="Company logo" width="80">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h4>Sales Associate , F.Y.E Retail Stores USA</h4>
+                  <h5>2021</h5>
+                  <!-- This entry doesn't have a list of achievements, but you can copy-paste the one from above -->
+                </div>
+              </li>
+
+            </ul>
+          </section>
+
+          <!-- We're done with jobs, let's move on to schools -->
+
+          <section class="titles">
+            <h2>Education</h2>
+            <ul class="biography-list list-unstyled">
+
+              <!-- Top item in education. And by "top", I mean a Bachelor in Creative Business at BUas. -->
+              <li class="biography-item row mb-2">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="images/schools/logo-buas.svg" alt="School logo" width="120">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h4>BA in Creative Business, Breda University of Applied Sciences</h4>
+                  <h5>2018&nbsp;to Present</h5>
+                  <!-- Use the list below to talk about minors, exchanges, extra-curricular activities. -->
+                  <ul class="biography-details list-unstyled">
+                    <li>Music Director for HUB Radio</li>
+                    <li>Awarded Best Short Film 2022</li>
+                    <li>Exchange with Bournemouth University</li>
+                  </ul>
+                </div>
+              </li>
+
+              <!-- 2nd item in education -->
+              <li class="biography-item row mb-2">
+                <div class="logo-container col-3 col-sm-2 col-md-3 col-lg-2">
+                  <img class="biography-logo mw-100 d-block mx-auto" src="https://www.wcpss.net//cms/lib/NC01911451/Centricity/Page/352/thumbnail_Outlook-4iobpmyq.png" alt="School logo" width="80">
+                </div>
+                <div class="biography-contents col-9 col-sm-10 col-md-9 col-lg-10">
+                  <h4>High School Diploma, Southeast Raleigh Magnet High School</h4>
+                  <h5>2021</h5>
+                  <ul class="biography-details list-unstyled">
+                    <li>Visual Arts Specialization</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- This is the end of the "Education" section -->
+
+        </main>
+
+        <!--
+          We're done with the first column.
+          We now move on to the column with contact details, languages and other skills
+          <aside> is also a semantic element.
+        -->
+        <aside class="col-md-5 col-lg-4 col-xl-3 resume-aside">
+
+          <!-- The first block will be contact details -->
+          <section class="titles">
+            <h2>Contact</h2>
+            <!--
+              A list of all your contact details.
+              There are more icons in the images/icons folder, have a look if you want to add your LinkedIn or TikTok profile.
+              Be careful and only put channels through which you really want to be contacted.
+              If your phone number is your personal one, you may want to remove it!
+            -->
+            <ul class="contact-list list-unstyled">
+              <li class="contact-item">
+                <a class="d-flex align-items-center" href="mailto:jaydens.rolling@gmail.com" target="_blank">
+                  <img class="contact-icon" src="images/icons/envelope.svg" alt="Email">
+                jaydens.rolling@gmail.com
+              </a>
+              </li>
+              <li class="contact-item">
+                <a class="d-flex align-items-center" href="https://www.facebook.com/jaydens.rolling/" target="_blank">
+                  <img class="contact-icon" src="images/icons/facebook.svg" alt="Facebook">
+                  Facebook Profile
+                </a>
+              </li>
+              <li class="contact-item">
+                <a class="d-flex align-items-center" href="https://github.com/zetspets" target="_blank">
+                  <img class="contact-icon" src="images/icons/github.svg" alt="LinkedIn">
+                  GitHub Profile
+                </a>
+              </li>
+              <li class="contact-item">
+                <a class="d-flex align-items-center" href="tel:+31630718944" target="_blank">
+                  <img class="contact-icon" src="images/icons/phone.svg" alt="Mobile Phone">
+                +31 6 30718944
+              </a>
+              </li>
+            </ul>
+          </section>
+
+          <!-- End of contact details, moving on to languages -->
+
+          <section class="my-3 aside-section">
+            <h2>Languages</h2>
+            <!-- Each item in the list is a language. Modify, add or remove depending on what you speak -->
+            <ul class="language-list list-unstyled">
+              <li class="language-item d-flex mb-1">
+                <h5 class="language-name w-50">English</h5>
+                <div class="language-level w-50 border border-info border-2 position-relative">
+                  <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
+                  <div class="language-progress position-absolute langcolor h-100 w-100"></div>
+                  <h6 class="position-absolute w-100 text-center top-0 py-1">Native</h6>
+                </div>
+              </li>
+              <li class="language-item d-flex mb-1">
+                <h5 class="language-name w-50">Japanese</h5>
+                <div class="language-level w-50 border border-info border-2 position-relative">
+                  <!-- The div below is a progress bar. Choose between w-25, w-50, w-75 and w-100 to show your level of fluency -->
+                  <div class="language-progress position-absolute langcolor h-100 w-25">&nbsp;</div>
+                  <h6 class="position-absolute w-100 text-center top-0 py-1">Beginner</h6>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!-- End of contact details, moving on to other skills -->
+
+          <section class="my-3 aside-section">
+            <h2>Other Skills</h2>
+            <ul class="skill-list list-unstyled">
+              <li class="skill-item">Team player</li>
+              <li class="skill-item">Adobe Creative Suite</li>
+              <li class="skill-item">Driver's License (USA)</li>
+				<li class="skill-item">Multi-Tasking</li>
+              <li class="skill-item">Microsoft Office</li>
+              <li class="skill-item">Group Managemet&nbsp;</li>
+            </ul>
+          </section>
+
+          <!-- End of other skills, moving on to interest and hobbies -->
+
+          <section class="my-3 aside-section">
+            <h2>Interests &amp; Hobbies</h2>
+            <ul class="skill-list list-unstyled">
+              <li class="skill-item">Fine and Performing Arts&nbsp;</li>
+              <li class="skill-item">Netflix Binge-Watcher</li>
+				<li class="skill-item">Long fiction book enjoyer&nbsp;</li>
+            </ul>
+          </section>
+
+        </aside>
+      </div>
+    </div>
+
+    <!-- And now, a footer! -->
+    <footer class="bg-dark mt-sm-5 py-4 text-light">
+      <p class="container text-end">
+        Created as part of the <a href="https://www.buas.nl/en/programmes/creative-business" target="_blank">Bachelor of Creative Business at Breda University of Applied Sciences.</a>
+      </p>
+    </footer>
+
+  </body>
+</html>

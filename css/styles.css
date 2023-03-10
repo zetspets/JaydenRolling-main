@@ -1,0 +1,81 @@
+/* Use this file to use your own styles*/
+
+/* Import declaration to use Google Fonts - check https://fonts.google.com/ for details */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h1 {
+	font-family: "Coronette";
+	text-shadow: 3.5px 3.5px #28701C;
+}
+h2 {
+	font-family: "Coronette"
+}
+h4, h5 {
+	font-family: basic-sans, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+li, h6, a {
+	font-family: basic-sans, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Styles for the body */
+
+body {
+	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #24431F;
+	background-image: url(https://i.etsystatic.com/6151456/r/il/e3f627/661768744/il_fullxfull.661768744_q98k.jpg);
+	  
+}
+
+/* Styles for custom classes in the document. (There are more, try to find them out!) */
+.titles {
+	color: #24431F;
+	text-align: left;
+}
+.name {
+	color: #FFE2A6
+}
+
+.resume-header {
+    background-color: #24431F;
+}
+
+.resume-main {
+	background-color: #FFF4DD;
+}
+
+.resume-aside {
+	background-color: #FFE2A6;
+}
+
+.langcolor {
+	background-color: #679850; /*changes bg color of language progress :P thank u paul for figuring it out :) */
+}
+
+/* Styles for lists in the document */
+
+.biography-details li::before, .skill-list li::before {
+	content: ">";
+	font-weight: 800;
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+.biography-details li::before {
+	color: #EE7623;
+}
+
+.biography-details li, .skill-list li {
+	padding-left: 1em;
+}
+
+/* Styles for contact icons */
+
+.contact-icon {
+	height: 1em;
+	flex-basis: 1.4em;
+}
